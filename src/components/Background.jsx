@@ -1,7 +1,9 @@
-const Background = () => {
+import './Background.css'
+
+export default function Background() {
   return (
-    <div className="bg-pattern"></div>
+    <div className="background" aria-hidden="true">
+      <canvas id="stars" />
+    </div>
   )
 }
-
-export default Background

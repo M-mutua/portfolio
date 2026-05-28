@@ -2,33 +2,18 @@
   min-height: 100vh;
   display: flex;
   align-items: center;
-  justify-content: center;
-  padding: 0 24px;
-}
-
-.hero-specs {
-  font-size: 0.95rem;
-  color: var(--text);
-  line-height: 2;
-  margin-bottom: 32px;
-}
-
-.hero-specs-continue {
-  display: inline-block;
-  margin-left: 24px;
-}
-
-.hero-text {
-  text-align: left;
 }
 
 .hero-content {
   display: grid;
   grid-template-columns: minmax(0, 1.2fr) minmax(0, 0.8fr);
   gap: 48px;
-  width: min(75vw, 1200px);
-  margin: 0 auto;
+  width: 100%;
   align-items: center;
+}
+
+.hero-text {
+  text-align: left;
 }
 
 .hero-greeting {
@@ -41,10 +26,6 @@
   font-size: 72px;
   letter-spacing: -2px;
   margin-bottom: 16px;
-
-  @media (max-width: 1024px) {
-    font-size: 48px;
-  }
 }
 
 .hero-description {
@@ -52,25 +33,14 @@
   color: var(--text);
   line-height: 1.6;
   margin-bottom: 28px;
-  max-width: 480px;
 }
 
-/* .hero-specializations {
-  display: flex;
-  flex-wrap: wrap;
-  gap: 10px;
+.hero-specs {
+  font-size: 0.95rem;
+  color: var(--text);
+  line-height: 2;
   margin-bottom: 32px;
-} */
-
-/* .spec-tag {
-  padding: 6px 14px;
-  border: 1px solid var(--accent-border);
-  background: var(--accent-bg);
-  color: var(--accent);
-  font-size: 0.85rem;
-  font-weight: 500;
-  border-radius: 0;
-} */
+}
 
 .hero-actions {
   display: flex;
@@ -92,7 +62,7 @@
 .btn-secondary {
   padding: 10px 24px;
   background: transparent;
-  color: var(--text-h);
+  color: var(--text);
   text-decoration: none;
   font-weight: 500;
   font-size: 0.95rem;
@@ -105,7 +75,7 @@
 }
 
 .btn-secondary:hover {
-  border-color: var(--accent-border);
+  border-color: var(--accent);
   color: var(--accent);
 }
 
@@ -124,25 +94,43 @@
   color: var(--accent);
 }
 
+.hero-image-container {
+  position: relative;
+  width: 80%;
+  padding-bottom: 20px;
+  padding-right: 20px;
+  justify-self: center;
+}
+
 .hero-image-wrap {
   width: 100%;
-  max-width: 420px;
-  height: 520px;
+  height: 380px;
   border: 1px solid var(--border);
   overflow: hidden;
   position: relative;
-  justify-self: start;
 }
 
 .hero-image-wrap::after {
   content: '';
   position: absolute;
-  bottom: -12px;
-  right: -12px;
+  bottom: -16px;
+  right: -16px;
   width: 96px;
   height: 96px;
   border-bottom: 2px solid var(--accent);
   border-right: 2px solid var(--accent);
+  pointer-events: none;
+}
+
+.hero-bracket {
+  position: absolute;
+  bottom: 4px;
+  right: 4px;
+  width: 90px;
+  height: 90px;
+  border-bottom: 4px solid var(--accent);
+  border-right: 4px solid var(--accent);
+  border-bottom-right-radius: 40px;
   pointer-events: none;
 }
 
@@ -166,6 +154,5 @@
 
   .hero-image-wrap {
     height: 360px;
-    max-width: 100%;
   }
 }

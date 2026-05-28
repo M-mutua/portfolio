@@ -11,6 +11,7 @@ const specializations = [
 export default function Hero() {
   return (
     <section id="hero">
+      <div className="inner">
       <div className="hero-content">
         <div className="hero-text">
           <p className="hero-greeting">Hi, I am</p>
@@ -33,9 +34,13 @@ export default function Hero() {
             <a href="https://www.linkedin.com/in/mathias-mutua" target="_blank" rel="noreferrer">LinkedIn</a>
           </div>
         </div>
+        <div className="hero-image-container">
         <div className="hero-image-wrap">
-          <img src={heroImage} alt="Mathias Mutua" className="hero-image" />
+         <img src={heroImage} alt="Mathias Mutua" className="hero-image" />
         </div>
+        <div className="hero-bracket" />
+        </div>
+      </div>
       </div>
     </section>
   )
