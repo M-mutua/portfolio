@@ -1,7 +1,5 @@
+import UnderConstruction from './UnderConstruction'
+
 export default function Experience() {
-  return (
-    <section>
-      Experience
-    </section>
-  )
+  return <UnderConstruction title="Experience" />
 }

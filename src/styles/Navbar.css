@@ -1,0 +1,13 @@
+.logo {
+  font-size: 1rem;
+  font-weight: 400;
+  color: var(--text);
+  letter-spacing: 2px;
+  border: 1px solid var(--border);
+  padding: 6px 12px;
+  text-decoration: none;
+}
+
+.logo:hover {
+  color: var(--text);
+}

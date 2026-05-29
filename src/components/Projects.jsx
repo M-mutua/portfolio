@@ -1,7 +1,5 @@
+import UnderConstruction from './UnderConstruction'
+
 export default function Projects() {
-  return (
-    <section>
-      Projects
-    </section>
-  )
+  return <UnderConstruction title="Projects" />
 }

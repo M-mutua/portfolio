@@ -1,7 +1,5 @@
+import UnderConstruction from './UnderConstruction'
+
 export default function Contact() {
-  return (
-    <section>
-      Contact
-    </section>
-  )
+  return <UnderConstruction title="Contact" />
 }

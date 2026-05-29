@@ -21,12 +21,12 @@ body {
   line-height: 1.5;
 }
 
-/* layout container */
 .container {
   width: 100%;
   max-width: 100%;
   margin: 0 auto;
 }
+
 .inner {
   width: 75%;
   margin: 0 auto;
@@ -34,18 +34,11 @@ body {
   align-items: center;
 }
 
-/* section spacing */
-section {
-  padding: 80px 0;
-}
-
-/* links */
 a {
   color: inherit;
   text-decoration: none;
 }
 
-/* subtle hover animation */
 a, button {
   transition: all 0.2s ease;
 }
@@ -54,12 +47,10 @@ a:hover {
   color: var(--accent);
 }
 
-/* sharp border utility */
 .border-box {
   border: 1px solid var(--border);
 }
 
-/*NAV BAR*/
 .navbar {
   position: sticky;
   top: 0;
@@ -75,11 +66,6 @@ a:hover {
   padding: 18px 0;
 }
 
-.logo {
-  font-weight: 600;
-  letter-spacing: 0.5px;
-}
-
 .nav-links {
   display: flex;
   gap: 24px;
@@ -90,7 +76,6 @@ a:hover {
   position: relative;
 }
 
-/* subtle hover underline animation */
 .nav-links a::after {
   content: "";
   position: absolute;
@@ -104,41 +89,4 @@ a:hover {
 
 .nav-links a:hover::after {
   width: 100%;
-}
-
-/*HERO SECTION*/
-.hero {
-  padding-top: 100px;
-}
-
-
-/* subtle background dots effect placeholder */
-.hero-content::before {
-  content: "";
-  position: absolute;
-  inset: 0;
-  opacity: 0.05;
-  background-image: radial-gradient(#111 1px, transparent 1px);
-  background-size: 18px 18px;
-  pointer-events: none;
-}
-
-.hero h1 {
-  font-size: 48px;
-  font-weight: 700;
-  margin-bottom: 20px;
-}
-
-.roles p {
-  font-size: 16px;
-  color: var(--muted);
-}
-/*BACKGROUND*/
-.bg-pattern {
-  position: fixed;
-  inset: 0;
-  z-index: -1;
-  opacity: 0.04;
-  background-image: radial-gradient(#111 1px, transparent 1px);
-  background-size: 20px 20px;
 }

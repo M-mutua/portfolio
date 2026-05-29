@@ -1,5 +1,5 @@
 import heroImage from '../assets/WhatsApp Image 2026-05-28 at 12.26.06.jpeg'
-import './Hero.css'
+import '../styles/Hero.css'
 
 const specializations = [
   'Computer Science',
@@ -35,10 +35,11 @@ export default function Hero() {
           </div>
         </div>
         <div className="hero-image-container">
-        <div className="hero-image-wrap">
-         <img src={heroImage} alt="Mathias Mutua" className="hero-image" />
-        </div>
-        <div className="hero-bracket" />
+          <div className='hero-pin' />
+          <div className="hero-image-wrap">
+            <img src={heroImage} alt="Mathias Mutua" className="hero-image" />
+          </div>
+          <div className="hero-bracket" />
         </div>
       </div>
       </div>
