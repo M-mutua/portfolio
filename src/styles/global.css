@@ -1,5 +1,3 @@
-@import url('https://fonts.googleapis.com/css2?family=Saira:wght@300;400;500;600;700&display=swap');
-
 :root {
   --bg: #F6F1E6;
   --text: #111111;
@@ -15,15 +13,16 @@
   margin: 0;
   padding: 0;
   box-sizing: border-box;
+  font-family: inherit;
 }
 
 html {
   scroll-behavior: smooth;
   background: var(--bg);
+  font-family: 'Saira', sans-serif;
 }
 
 body {
-  font-family: 'Saira', sans-serif;
   background: var(--bg);
   color: var(--text);
   font-size: 1rem;
@@ -42,6 +41,16 @@ button,
 input,
 textarea {
   font: inherit;
+}
+
+button,
+input,
+textarea,
+select,
+option,
+optgroup,
+summary {
+  font-family: inherit;
 }
 
 .inner {
@@ -115,7 +124,21 @@ p {
 }
 
 @media (max-width: 560px) {
+  .inner {
+    width: calc(100% - 28px);
+  }
+
   .button {
     width: 100%;
+  }
+}
+
+@media (max-width: 900px) {
+  .inner {
+    width: min(88%, 960px);
+  }
+
+  section {
+    scroll-margin-top: 76px;
   }
 }

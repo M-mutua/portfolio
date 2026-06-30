@@ -49,3 +49,15 @@
   border-color: var(--accent);
   color: var(--accent);
 }
+
+@media (max-width: 560px) {
+  .contact__links {
+    flex-direction: column;
+    align-items: stretch;
+  }
+
+  .contact__tag {
+    width: 100%;
+    justify-content: center;
+  }
+}

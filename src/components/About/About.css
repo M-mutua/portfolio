@@ -5,12 +5,13 @@
 
 .about__cloud {
   position: absolute;
-  top: 24px;
-  right: 13%;
-  width: min(180px, 28vw);
+  top: -28px;
+  left: 50%;
+  width: min(760px, 86vw);
   color: var(--border);
-  opacity: 0.12;
+  opacity: 0.1;
   pointer-events: none;
+  transform: translateX(-50%);
 }
 
 .about__content {
@@ -34,4 +35,16 @@
 
 .about p:not(.about__meta) {
   font-size: 0.95rem;
+}
+
+@media (max-width: 560px) {
+  .about__cloud {
+    top: -18px;
+    width: min(92vw, 420px);
+  }
+
+  .about__meta,
+  .about p:not(.about__meta) {
+    font-size: 0.88rem;
+  }
 }

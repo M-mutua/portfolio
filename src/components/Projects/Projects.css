@@ -6,3 +6,13 @@
   display: grid;
   gap: clamp(34px, 5.5vw, 62px);
 }
+
+@media (max-width: 560px) {
+  .projects__header {
+    margin-bottom: 18px;
+  }
+
+  .projects__list {
+    gap: 34px;
+  }
+}

@@ -5,17 +5,17 @@ export default function About() {
     <section className="section about" id="about">
       <svg
         className="about__cloud"
-        viewBox="0 0 180 84"
+        viewBox="0 0 520 160"
         role="presentation"
         aria-hidden="true"
       >
         <path
-          d="M33 58C17 58 8 48 8 36c0-13 11-23 25-22 6-10 18-16 31-13 10 2 18 8 23 17 7-4 16-5 25-1 10 4 16 13 16 24h7c16 0 27 9 27 21 0 13-11 21-28 21H36c-14 0-25-7-25-19 0-4 1-8 4-11"
+          d="M11 121C35 74 78 50 139 50c21-31 59-46 102-36 32 7 57 25 75 55 28-17 66-18 98-3 39 19 61 51 61 93"
           fill="none"
           stroke="currentColor"
           strokeLinecap="round"
           strokeLinejoin="round"
-          strokeWidth="3"
+          strokeWidth="4"
         />
       </svg>
       <div className="inner">

@@ -14,6 +14,7 @@
 
 .hero__copy {
   max-width: 720px;
+  min-width: 0;
 }
 
 .hero__greeting {
@@ -165,18 +166,46 @@
 
   .hero__portrait-shell {
     justify-self: start;
-    max-width: 420px;
+    max-width: 360px;
   }
 }
 
 @media (max-width: 560px) {
+  .hero {
+    padding: 28px 0 34px;
+  }
+
   .hero__actions,
   .hero__socials {
     align-items: stretch;
     flex-direction: column;
   }
 
+  .hero__specialties {
+    font-size: 0.86rem;
+  }
+
+  .hero__socials {
+    gap: 12px;
+    font-size: 0.88rem;
+  }
+
+  .hero__portrait-shell {
+    justify-self: stretch;
+    width: min(100%, 320px);
+    padding-right: 16px;
+    padding-bottom: 16px;
+  }
+
   .hero__portrait-frame {
-    height: 340px;
+    height: min(76vw, 320px);
+  }
+
+  .hero__corner-accent {
+    width: 92px;
+    height: 92px;
+    border-right-width: 5px;
+    border-bottom-width: 5px;
+    border-bottom-right-radius: 28px;
   }
 }

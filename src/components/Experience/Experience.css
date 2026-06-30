@@ -34,3 +34,21 @@
 .experience__entry p:last-child {
   font-size: 0.95rem;
 }
+
+@media (max-width: 560px) {
+  .experience {
+    padding-block: 22px;
+  }
+
+  .experience__entry {
+    padding-left: 14px;
+  }
+
+  .experience__entry h3 {
+    font-size: 1.25rem;
+  }
+
+  .experience__entry p:last-child {
+    font-size: 0.9rem;
+  }
+}

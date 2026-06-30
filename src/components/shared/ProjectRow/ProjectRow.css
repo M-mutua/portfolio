@@ -5,6 +5,11 @@
   gap: clamp(24px, 4vw, 52px);
 }
 
+.project-row__text,
+.project-row__visual {
+  min-width: 0;
+}
+
 /*
   The alternating layout is driven by the mapped project index in Projects.jsx.
   CSS order keeps each project using one shared component instead of duplicating markup.
@@ -120,5 +125,31 @@
 
   .project-row__visual {
     min-height: 200px;
+  }
+}
+
+@media (max-width: 560px) {
+  .project-row {
+    gap: 18px;
+  }
+
+  .project-row__problem,
+  .project-row__status,
+  .project-row__description,
+  .project-row__placeholder {
+    font-size: 0.86rem;
+  }
+
+  .project-row__stack {
+    margin: 14px 0;
+    gap: 6px;
+  }
+
+  .project-row__links {
+    gap: 12px;
+  }
+
+  .project-row__visual {
+    min-height: 180px;
   }
 }

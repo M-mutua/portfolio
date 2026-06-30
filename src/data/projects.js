@@ -1,3 +1,4 @@
+import intelliSecureImage from '../assets/intelli_secure.png'
 import neuralBridgeImage from '../assets/neural_bridge.png'
 import truestellarImage from '../assets/truestellar.png'
 import vetIntelligenceImage from '../assets/vet_intelligence.png'
@@ -12,7 +13,7 @@ export const projects = [
     github: "https://github.com/M-mutua",
     demo: null,
     status: null,
-    image: null,
+    image: intelliSecureImage,
   },
   {
     id: 'trustellar',

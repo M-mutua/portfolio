@@ -1,0 +1,55 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="./src/styles/global.css" />
+    <link rel="stylesheet" href="./src/components/Hero/Hero.css" />
+    <title>Portfolio Font Check</title>
+  </head>
+  <body>
+    <main>
+      <section class="hero">
+        <div class="inner hero__grid">
+          <div class="hero__copy">
+            <h1 id="heading">Mathias Mutua</h1>
+            <p id="paragraph">Building secure, scalable systems.</p>
+            <a id="button" class="button button--primary" href="#projects">View Projects</a>
+          </div>
+        </div>
+      </section>
+    </main>
+    <pre id="result">pending</pre>
+    <script>
+      async function reportFonts() {
+        await document.fonts.ready;
+        const elements = ['heading', 'paragraph', 'button'];
+        const computed = Object.fromEntries(
+          elements.map((id) => [id, getComputedStyle(document.getElementById(id)).fontFamily])
+        );
+        const faces = Array.from(document.fonts).map((font) => ({
+          family: font.family,
+          status: font.status,
+          weight: font.weight,
+        }));
+        const resources = performance
+          .getEntriesByType('resource')
+          .map((entry) => entry.name)
+          .filter((name) => name.includes('fonts.googleapis') || name.includes('fonts.gstatic'));
+        document.getElementById('result').textContent = JSON.stringify(
+          {
+            computed,
+            fontsStatus: document.fonts.status,
+            sairaAvailable: document.fonts.check('16px Saira'),
+            faces,
+            resources,
+          },
+          null,
+          2
+        );
+      }
+
+      reportFonts();
+    </script>
+  </body>
+</html>
