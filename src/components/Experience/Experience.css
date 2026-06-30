@@ -1,0 +1,36 @@
+.experience {
+  padding-block: 26px;
+}
+
+.experience__content {
+  max-width: 760px;
+}
+
+.experience h2 {
+  margin-bottom: 18px;
+}
+
+.experience__entry {
+  border-left: 3px solid var(--accent);
+  padding-left: 18px;
+}
+
+.experience__company,
+.experience__status {
+  color: var(--muted);
+  font-size: 0.9rem;
+  font-weight: 600;
+}
+
+.experience__entry h3 {
+  margin: 4px 0;
+  font-size: clamp(1.35rem, 2.3vw, 2rem);
+}
+
+.experience__status {
+  margin-bottom: 10px;
+}
+
+.experience__entry p:last-child {
+  font-size: 0.95rem;
+}

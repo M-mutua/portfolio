@@ -1,0 +1,51 @@
+.contact {
+  padding-block: 28px 36px;
+}
+
+.contact__content {
+  max-width: 760px;
+  margin: 0 auto;
+  text-align: center;
+}
+
+.contact h2 {
+  margin-bottom: 10px;
+}
+
+.contact p {
+  color: var(--muted);
+  font-size: 0.95rem;
+}
+
+.contact__links {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 10px;
+  margin-top: 18px;
+}
+
+.contact__tag {
+  display: inline-flex;
+  align-items: center;
+  gap: 8px;
+  border: 1px solid var(--border);
+  padding: 8px 11px;
+  color: var(--text);
+  font-size: 0.88rem;
+  font-weight: 600;
+}
+
+.contact__tag span {
+  color: var(--accent);
+}
+
+.contact__tag strong {
+  font-weight: 600;
+}
+
+.contact__tag:hover,
+.contact__tag:focus-visible {
+  border-color: var(--accent);
+  color: var(--accent);
+}

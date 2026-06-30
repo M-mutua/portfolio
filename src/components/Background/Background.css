@@ -1,0 +1,14 @@
+.site-background {
+  position: fixed;
+  inset: 0;
+  z-index: -1;
+  pointer-events: none;
+  background-image: radial-gradient(circle, rgba(31, 31, 31, 0.24) 1px, transparent 1.2px);
+  background-size: 26px 26px;
+  /*
+    The mask keeps the center quiet so the content reads clearly, then lets the
+    dot pattern grow stronger toward the edges like a soft field of stars.
+  */
+  mask-image: radial-gradient(circle at center, transparent 0 24%, rgba(0, 0, 0, 0.2) 42%, #000 78%);
+  -webkit-mask-image: radial-gradient(circle at center, transparent 0 24%, rgba(0, 0, 0, 0.2) 42%, #000 78%);
+}
